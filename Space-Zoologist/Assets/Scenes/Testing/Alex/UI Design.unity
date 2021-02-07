@@ -1277,6 +1277,69 @@ Transform:
   m_Father: {fileID: 462963691}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &427084352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427084353}
+  - component: {fileID: 427084354}
+  m_Layer: 0
+  m_Name: ResourceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427084353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427084352}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791501854}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &427084354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427084352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bfe800dbd39e4b719e18bfe0c64d22b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceData:
+  - resourceName: Space Maple
+    initialAmount: 0
+  - resourceName: Dirt
+    initialAmount: 0
+  - resourceName: Grass
+    initialAmount: 0
+  - resourceName: Sand
+    initialAmount: 0
+  - resourceName: AtmosphereMachine
+    initialAmount: 0
+  - resourceName: LiquidMachine
+    initialAmount: 0
+  - resourceName: Liquid
+    initialAmount: 0
+  - resourceName: Space Sweetgum
+    initialAmount: 0
+  - resourceName: Space Sycamore
+    initialAmount: 0
+  LevelDataRef: {fileID: 320161629}
 --- !u!1 &462963690
 GameObject:
   m_ObjectHideFlags: 0
@@ -12508,7 +12571,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1998453961297804051}
   m_HandleRect: {fileID: 1998453961297804050}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
