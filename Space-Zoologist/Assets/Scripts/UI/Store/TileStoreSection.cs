@@ -53,6 +53,7 @@ public class TileStoreSection : StoreSection
         this.EnclosureSystem.UpdateEnclosedAreas();
         tilePlacementController.StopPreview();
         base.playerBalance.SetBalance(startingBalance - numTilesPlaced * selectedItem.Price);
+        ResourceManager.Placed(selectedItem, numTilesPlaced); // Reduce resource available in store
     }
 
     /// <summary>

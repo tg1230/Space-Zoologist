@@ -22,7 +22,7 @@ public class FoodSourceStoreSection : StoreSection
     public override void OnCursorPointerUp(PointerEventData eventData)
     {
         base.OnCursorPointerUp(eventData);
-        if (base.IsCursorOverUI(eventData) || !base.CanAfford(base.selectedItem))
+        if (base.IsCursorOverUI(eventData) || !base.CanAfford(base.selectedItem) || ResourceManager.CheckRemainingResource(base.selectedItem) <= 0)
         {
             base.OnItemSelectionCanceled();
             return;
@@ -36,6 +36,7 @@ public class FoodSourceStoreSection : StoreSection
                 return;
             }
             base.playerBalance.SubtractFromBalance(selectedItem.Price);
+            ResourceManager.Placed(selectedItem, 1); // Reduce resource available in store
             Vector3Int mouseGridPosition = base.GridSystem.Grid.WorldToCell(mousePosition);
             Vector3Int pos;
 

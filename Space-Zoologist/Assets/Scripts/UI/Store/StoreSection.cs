@@ -21,10 +21,11 @@ public class StoreSection : MonoBehaviour
     protected PlayerBalance playerBalance = default;
     protected LevelDataReference LevelDataReference = default;
     protected GridSystem GridSystem = default;
+    protected ResourceManager ResourceManager = default;
 
     protected Item selectedItem = null;
 
-    public void SetupDependencies(LevelDataReference levelData, CursorItem cursorItem, List<RectTransform> UIElements, GridSystem gridSystem, PlayerBalance playerBalance, CanvasObjectStrobe playerBalanceDisplay)
+    public void SetupDependencies(LevelDataReference levelData, CursorItem cursorItem, List<RectTransform> UIElements, GridSystem gridSystem, PlayerBalance playerBalance, CanvasObjectStrobe playerBalanceDisplay, ResourceManager resourceManager)
     {
         this.LevelDataReference = levelData;
         this.cursorItem = cursorItem;
@@ -32,6 +33,7 @@ public class StoreSection : MonoBehaviour
         this.GridSystem = gridSystem;
         this.playerBalance = playerBalance;
         this.PlayerBalanceDisplay = playerBalanceDisplay;
+        this.ResourceManager = resourceManager;
     }
 
     public virtual void Initialize()

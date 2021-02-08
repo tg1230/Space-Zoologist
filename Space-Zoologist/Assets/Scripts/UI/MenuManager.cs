@@ -13,6 +13,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] PauseManager PauseManager = default;
     [SerializeField] GameObject PauseButton = default;
     [SerializeField] SellingManager SellManager = default;
+    [SerializeField] ResourceManager ResourceManager = default;
     [Header("Shared menu dependencies")]
     [SerializeField] PlayerBalance PlayerBalance = default;
     [SerializeField] CanvasObjectStrobe PlayerBalanceDisplay = default;
@@ -27,7 +28,7 @@ public class MenuManager : MonoBehaviour
         this.IsInStore = false;
         foreach (StoreSection storeMenu in this.StoreMenus)
         {
-            storeMenu.SetupDependencies(this.LevelDataReference, this.CursorItem, this.UIElements, this.GridSystem, this.PlayerBalance, this.PlayerBalanceDisplay);
+            storeMenu.SetupDependencies(this.LevelDataReference, this.CursorItem, this.UIElements, this.GridSystem, this.PlayerBalance, this.PlayerBalanceDisplay, this.ResourceManager);
             storeMenu.Initialize();
         }
         PodMenu.SetupDependencies(this.LevelDataReference, this.CursorItem, this.UIElements, this.GridSystem);

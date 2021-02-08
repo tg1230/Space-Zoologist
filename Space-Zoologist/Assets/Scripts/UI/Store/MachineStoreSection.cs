@@ -56,5 +56,6 @@ public class MachineStoreSection : StoreSection
         {
             newMachineGameObject.AddComponent<LiquidMachine>().Initialize(this.TileSystem, this.LiquidMachineHUD);
         }
+        ResourceManager.Placed(selectedItem, 1); // Reduce resource available in store
     }
 }

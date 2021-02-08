@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AddResourceCommand { addGrass, add5Grass, add10Grass, addDirt, add5Dirt, add10Dirt, addSand, add5Sand, add10Sand, addStone, add5Stone, add10Stone, };
-
 public class ResourceManager : MonoBehaviour
 {
     [System.Serializable]
@@ -16,9 +14,9 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    [SerializeField] List<ResourceData> resourceData = default;
-    Dictionary<string, int> remainingResources = new Dictionary<string, int>();
     [SerializeField] LevelDataReference LevelDataRef = default;
+    [SerializeField] List<ResourceData> resourceData = default;
+    Dictionary<string, int> remainingResources;
 
     // Auto-generate the list of ResourceData for you if resourceData is empty
     public void OnValidate()
@@ -30,40 +28,25 @@ public class ResourceManager : MonoBehaviour
         foreach (Item item in LevelDataRef.LevelData.Items) {
             resourceData.Add(new ResourceData(item.ID));
         }
+        foreach (AnimalSpecies species in LevelDataRef.LevelData.AnimalSpecies) {
+            resourceData.Add(new ResourceData(species.SpeciesName));
+        }
     }
 
 
     public void Start()
     {
+        remainingResources = new Dictionary<string, int>();
         foreach (ResourceData data in resourceData) {
             remainingResources.Add(data.resourceName, data.initialAmount);
         }
     }
 
-    public void AddResource(AddResourceCommand command) {
-
-        switch (command) {
-            case AddResourceCommand.addGrass:
-                AddItems("Grass", 1);
-                break;
-            case AddResourceCommand.add5Grass:
-                AddItems("Grass", 5);
-                break;
-            case AddResourceCommand.add10Grass:
-                AddItems("Grass", 10);
-                break;
-            default:
-                break;
-
-        }
-
+    public void AddItem(Item item, int amount) {
+        AddItem(item.ID, amount);
     }
 
-    public void AddItems(Item item, int amount) {
-        AddItems(item.ID, amount);
-    }
-
-    void AddItems(string itemName, int amount) {
+    void AddItem(string itemName, int amount) {
         if (remainingResources.ContainsKey(itemName))
         {
             remainingResources[itemName] += amount;
@@ -76,10 +59,15 @@ public class ResourceManager : MonoBehaviour
 
     public void Placed(Item item, int amount)
     {
-        PlacedItems(item.ID, amount);
+        PlacedItem(item.ID, amount);
     }
 
-    void PlacedItems(string itemName, int amount) {
+    public void Placed(AnimalSpecies species, int amount)
+    {
+        PlacedItem(species.SpeciesName, amount);
+    }
+
+    void PlacedItem(string itemName, int amount) {
         if (remainingResources.ContainsKey(itemName))
         {
             remainingResources[itemName] -= amount;
@@ -90,14 +78,27 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    public int CheckRemainingAmount(string itemName) {
-        if (remainingResources.ContainsKey(itemName))
+    public int CheckRemainingResource(Item item) {
+        if (remainingResources.ContainsKey(item.ID))
         {
-            return remainingResources[itemName];
+            return remainingResources[item.ID];
         }
         else
         {
-            Debug.LogError("ResourceManager: " + itemName + " does not exist!");
+            Debug.LogError("ResourceManager: " + item.ID + " does not exist!");
+            return -1;
+        }
+    }
+
+    public int CheckRemainingResource(AnimalSpecies species)
+    {
+        if (remainingResources.ContainsKey(species.SpeciesName))
+        {
+            return remainingResources[species.SpeciesName];
+        }
+        else
+        {
+            Debug.LogError("ResourceManager: " + species.SpeciesName + " does not exist!");
             return -1;
         }
     }
