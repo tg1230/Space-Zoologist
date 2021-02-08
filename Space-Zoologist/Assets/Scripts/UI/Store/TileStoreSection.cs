@@ -79,6 +79,12 @@ public class TileStoreSection : StoreSection
     public override void OnCursorPointerUp(PointerEventData eventData)
     {
         base.OnCursorPointerUp(eventData);
+        // If placement is invalid
+        if (!base.CanAfford(base.selectedItem) || ResourceManager.CheckRemainingResource(base.selectedItem) < numTilesPlaced)
+        {
+            OnItemSelectionCanceled();
+            return;
+        }
         if (eventData.button == PointerEventData.InputButton.Left && isPlacing)
         {
             FinishPlacing();

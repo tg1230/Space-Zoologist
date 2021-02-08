@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{A459D260-E338-EAF5-2ABE-0A8DC1A6AE6D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/Pods/PodMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/Store/TileStoreSection.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI/MenuManager.cs" Line="31" Column="184" />
-      <File FileName="Assets/Scripts/UI/Store/StoreSection.cs" Line="36" Column="48" />
-      <File FileName="Assets/Scripts/UI/Store/StoreItemCell.cs" Line="12" Column="46" />
-      <File FileName="Assets/Scripts/UI/Store/FoodSourceStoreSection.cs" Line="38" Column="72" />
-      <File FileName="Assets/Scripts/UI/Store/TileStoreSection.cs" Line="56" Column="100" />
-      <File FileName="Assets/Scripts/UI/Store/MachineStoreSection.cs" Line="58" Column="10" />
-      <File FileName="Assets/Scripts/Utils/Managers/EventManager.cs" Line="98" Column="35" />
-      <File FileName="Assets/Scripts/Utils/Managers/ResourceManager.cs" Line="42" Column="24" />
-      <File FileName="Assets/Scripts/UI/Pods/PodMenu.cs" Line="98" Column="6" />
+      <File FileName="Assets/Scripts/UI/Store/StoreItemCell.cs" Line="35" Column="80" IsPinned="True" />
+      <File FileName="Assets/Scripts/UI/MenuManager.cs" />
+      <File FileName="Assets/Scripts/UI/Store/StoreSection.cs" />
+      <File FileName="Assets/Scripts/UI/Store/FoodSourceStoreSection.cs" />
+      <File FileName="Assets/Scripts/UI/Store/TileStoreSection.cs" Line="114" Column="76" />
+      <File FileName="Assets/Scripts/Grid/TilePlacementController.cs" />
+      <File FileName="Assets/Scripts/UI/Store/MachineStoreSection.cs" />
+      <File FileName="Assets/Scripts/Utils/Managers/EventManager.cs" />
+      <File FileName="Assets/Scripts/Utils/Managers/ResourceManager.cs" />
+      <File FileName="Assets/Scripts/UI/Pods/PodMenu.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,10 +27,10 @@
                 <Node name="UI" expanded="True">
                   <Node name="Inspector" expanded="True" />
                   <Node name="Machines" expanded="True" />
-                  <Node name="Pods" expanded="True">
-                    <Node name="PodMenu.cs" selected="True" />
+                  <Node name="Pods" expanded="True" />
+                  <Node name="Store" expanded="True">
+                    <Node name="StoreItemCell.cs" selected="True" />
                   </Node>
-                  <Node name="Store" expanded="True" />
                 </Node>
                 <Node name="Utils" expanded="True">
                   <Node name="Managers" expanded="True" />

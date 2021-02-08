@@ -1320,9 +1320,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfe800dbd39e4b719e18bfe0c64d22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelDataRef: {fileID: 320161629}
   resourceData:
   - resourceName: Space Maple
-    initialAmount: 0
+    initialAmount: 2
   - resourceName: Dirt
     initialAmount: 0
   - resourceName: Grass
@@ -1339,7 +1340,6 @@ MonoBehaviour:
     initialAmount: 0
   - resourceName: Space Sycamore
     initialAmount: 0
-  LevelDataRef: {fileID: 320161629}
 --- !u!1 &462963690
 GameObject:
   m_ObjectHideFlags: 0
@@ -18058,6 +18058,7 @@ MonoBehaviour:
   PauseManager: {fileID: 650241543}
   PauseButton: {fileID: 6560090619776935623}
   SellManager: {fileID: 0}
+  ResourceManager: {fileID: 427084354}
   PlayerBalance: {fileID: 4661624496553112467}
   PlayerBalanceDisplay: {fileID: 4661624496683842236}
   LevelDataReference: {fileID: 320161629}
@@ -19276,6 +19277,7 @@ MonoBehaviour:
     type: 3}
   PodItemContainer: {fileID: 4661624497762659784}
   populationManager: {fileID: 2078374405}
+  resourceManager: {fileID: 0}
   TopHUD: {fileID: 4661624496683842237}
 --- !u!1 &4661624497486192604
 GameObject:

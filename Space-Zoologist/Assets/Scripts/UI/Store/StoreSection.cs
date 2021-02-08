@@ -54,7 +54,7 @@ public class StoreSection : MonoBehaviour
     public void AddItem(Item item)
     {
         GameObject newItemCellGO = Instantiate(itemCellPrefab, itemGrid);
-        newItemCellGO.GetComponent<StoreItemCell>().Initialize(item, OnItemSelected);
+        newItemCellGO.GetComponent<StoreItemCell>().Initialize(item, OnItemSelected, ResourceManager);
     }
 
     /// <summary>
