@@ -29,6 +29,10 @@ public class MachineStoreSection : StoreSection
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(eventData.position);
+            if (ResourceManager.CheckRemainingResource(selectedItem) <= 0) {
+                Debug.Log("Not enough " + selectedItem.ItemName);
+                return;
+            }
             if (!base.GridSystem.PlacementValidation.IsItemPlacementValid(mousePosition, base.selectedItem))
             {
                 Debug.Log("Cannot place item that location");

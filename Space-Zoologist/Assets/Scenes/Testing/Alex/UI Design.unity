@@ -1325,13 +1325,13 @@ MonoBehaviour:
   - resourceName: Space Maple
     initialAmount: 2
   - resourceName: Dirt
-    initialAmount: 0
+    initialAmount: 2
   - resourceName: Grass
-    initialAmount: 0
+    initialAmount: 2
   - resourceName: Sand
-    initialAmount: 0
+    initialAmount: 4
   - resourceName: AtmosphereMachine
-    initialAmount: 0
+    initialAmount: 1
   - resourceName: LiquidMachine
     initialAmount: 0
   - resourceName: Liquid

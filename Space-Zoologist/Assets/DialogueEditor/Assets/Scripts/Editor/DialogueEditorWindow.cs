@@ -345,11 +345,11 @@ namespace DialogueEditor
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void OnScriptsReloaded()
         {
-            // Clear our reffrence to the CurrentAsset on script reload in order to prevent 
+            // Clear our reference to the CurrentAsset on script reload in order to prevent 
             // save detection overwriting the object with an empty conversation (save triggerred 
             // with no uiNodes present in window due to recompile). 
             Log("Scripts reloaded. Clearing current asset.");
-            ShowWindow().CurrentAsset = null;
+            GetWindow<DialogueEditorWindow>("Dialogue Editor", false).CurrentAsset = null;
         }
 
 
