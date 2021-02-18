@@ -1,28 +1,25 @@
 ﻿<Properties StartupConfiguration="{A459D260-E338-EAF5-2ABE-0A8DC1A6AE6D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DialogueEditor/Assets/Scripts/Editor/DialogueEditorWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Utils/Objectives/Objective.cs">
     <Files>
-      <File FileName="Assets/Scripts/Utils/Dialogue/PopGrowthDialogue.cs" Line="8" Column="5" />
-      <File FileName="Assets/Scripts/Utils/Managers/ObjectiveManager.cs" />
-      <File FileName="Assets/Scripts/Utils/Objectives/Objective.cs" />
+      <File FileName="Assets/Scripts/Utils/Managers/ObjectiveManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Utils/Objectives/Objective.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Species/Population/Animal.cs" />
-      <File FileName="Assets/Scripts/Grid/GridIO.cs" Line="36" Column="49" />
-      <File FileName="Assets/Scripts/Species/Representation/BehaviorPatternUpdater.cs" Line="39" Column="64" />
-      <File FileName="Assets/Scripts/Utils/Managers/DialogueManager.cs" Line="15" Column="38" />
-      <File FileName="Assets/DialogueEditor/Assets/Scripts/NPCConversation.cs" Line="324" Column="58" />
+      <File FileName="Assets/Scripts/Grid/GridIO.cs" />
+      <File FileName="Assets/Scripts/Species/Representation/BehaviorPatternUpdater.cs" />
+      <File FileName="Assets/Scripts/Utils/Managers/DialogueManager.cs" />
+      <File FileName="Assets/DialogueEditor/Assets/Scripts/NPCConversation.cs" />
       <File FileName="Assets/DialogueEditor/Assets/Scripts/Editor/DialogueEditorWindow.cs" Line="352" Column="91" />
-      <File FileName="Assets/DialogueEditor/Assets/Scripts/Editor/NPCConversationEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets/DialogueEditor/Assets/Scripts/Editor/NPCConversationEditor.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Space-Zoologist" expanded="True">
-            <Node name="Assets" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="DialogueEditor" expanded="True">
                 <Node name="Assets" expanded="True">
                   <Node name="Scripts" expanded="True">
-                    <Node name="Editor" expanded="True">
-                      <Node name="DialogueEditorWindow.cs" selected="True" />
-                    </Node>
+                    <Node name="Editor" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -55,7 +52,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="28f09b1e-6482-4adc-bb72-241c13d9b247" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="30d7ddbe-5719-42d1-a4f6-1da7386be13b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alexchiu/Desktop/School/Space-Zoologist/Space-Zoologist/Assets/Scripts/Utils/PlayerController.cs" relfile="Assets/Scripts/Utils/PlayerController.cs" line="105" column="1" />
