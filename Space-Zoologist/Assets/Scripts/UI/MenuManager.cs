@@ -34,6 +34,7 @@ public class MenuManager : MonoBehaviour
         PodMenu.SetupDependencies(this.LevelDataReference, this.CursorItem, this.UIElements, this.GridSystem, this.ResourceManager);
         PodMenu.Initialize();
         this.PlayerBalanceHUD.GetComponent<TopHUD>().SetupPlayerBalance(this.PlayerBalance);
+        StoreToggledOn(StoreMenus[0].gameObject);
     }
 
     public void OnToggleMenu(GameObject menu)
@@ -42,7 +43,7 @@ public class MenuManager : MonoBehaviour
         {
             if (!this.IsInStore)
             {
-                this.PauseManager.TryToPause();
+                //this.PauseManager.TryToPause();
                 EventManager.Instance.InvokeEvent(EventType.StoreOpened, null);
             }
             this.StoreToggledOn(menu);
@@ -68,19 +69,19 @@ public class MenuManager : MonoBehaviour
         currentMenu = menu;
         this.PlayerBalanceHUD.SetActive(true);
         this.IsInStore = true;
-        this.PauseButton.SetActive(false);
+        //this.PauseButton.SetActive(false);
     }
 
     private void StoreToggledOff(GameObject menu)
     {
         if (menu != null)
         {
-            menu.SetActive(false);
-            this.currentMenu = null;
+            //menu.SetActive(false);
+            //this.currentMenu = null;
             this.PlayerBalanceHUD.SetActive(false);
             this.IsInStore = false;
-            this.PauseManager.TryToUnpause();
-            this.PauseButton.SetActive(true);
+            //this.PauseManager.TryToUnpause();
+            //this.PauseButton.SetActive(true);
         }
 
         EventManager.Instance.InvokeEvent(EventType.StoreClosed, null);
