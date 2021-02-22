@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject DialogueButton = default;
     [SerializeField] private Sprite DefaultImage = default;
     [SerializeField] private Sprite NotificationImage = default;
+    [SerializeField] private GameObject Notification = default;
 
     private bool ContinueSpeech = false;
 
@@ -45,7 +46,8 @@ public class DialogueManager : MonoBehaviour
 
     public void SetNewDialogue(NPCConversation newDialogue)
     {
-        this.DialogueButton.GetComponent<Image>().sprite = NotificationImage;
+        //this.DialogueButton.GetComponent<Image>().sprite = NotificationImage;
+        this.Notification.SetActive(true);
         currentDialogue = newDialogue;
     }
 
@@ -59,7 +61,8 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void StartInteractiveConversation()
     {
-        this.DialogueButton.GetComponent<Image>().sprite = DefaultImage;
+        //this.DialogueButton.GetComponent<Image>().sprite = DefaultImage;
+        this.Notification.SetActive(false);
         if (ContinueSpeech)
         {
             ConversationManagerGameObject.SetActive(!ConversationManagerGameObject.activeSelf);

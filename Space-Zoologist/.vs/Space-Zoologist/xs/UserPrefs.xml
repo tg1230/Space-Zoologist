@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{A459D260-E338-EAF5-2ABE-0A8DC1A6AE6D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TimeManagers/TimeSystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DialogueEditor/Assets/Scripts/UI/ConversationManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Grid/ReserveDraft.cs" Line="77" Column="20" />
-      <File FileName="Assets/Scripts/TimeManagers/TimeSystem.cs" Line="18" Column="27" />
+      <File FileName="Assets/Scripts/Grid/ReserveDraft.cs" Line="66" Column="24" />
+      <File FileName="Assets/Scripts/TimeManagers/TimeSystem.cs" />
+      <File FileName="Assets/Scripts/Grid/GridIO.cs" Line="125" Column="1" />
+      <File FileName="Assets/Scripts/Dialogue/DialogueManager.cs" Line="43" Column="56" />
+      <File FileName="Assets/DialogueEditor/Assets/Scripts/UI/ConversationManager.cs" Line="374" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +21,9 @@
                 <Node name="Assets" expanded="True">
                   <Node name="Scripts" expanded="True">
                     <Node name="Editor" expanded="True" />
-                    <Node name="UI" expanded="True" />
+                    <Node name="UI" expanded="True">
+                      <Node name="ConversationManager.cs" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
@@ -37,9 +42,7 @@
                   <Node name="Population" expanded="True" />
                   <Node name="Representation" expanded="True" />
                 </Node>
-                <Node name="TimeManagers" expanded="True">
-                  <Node name="TimeSystem.cs" selected="True" />
-                </Node>
+                <Node name="TimeManagers" expanded="True" />
                 <Node name="UI" expanded="True">
                   <Node name="Store" expanded="True" />
                 </Node>
@@ -55,7 +58,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c4056a2-2b08-45b6-8f42-be5be7b2e5a2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="679db961-ce88-40c9-ae1e-26875b95de76" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
