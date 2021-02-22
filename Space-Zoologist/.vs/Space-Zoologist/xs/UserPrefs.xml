@@ -1,25 +1,26 @@
 ﻿<Properties StartupConfiguration="{A459D260-E338-EAF5-2ABE-0A8DC1A6AE6D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Grid/Tiles/TileColorManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Grid/ReserveDraft.cs">
     <Files>
       <File FileName="Assets/Scripts/Utils/Managers/ObjectiveManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Utils/Objectives/Objective.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Utils/Objectives/Objective.cs" />
       <File FileName="Assets/Scripts/Species/Population/Animal.cs" />
-      <File FileName="Assets/Scripts/Grid/GridIO.cs" />
+      <File FileName="Assets/Scripts/Grid/GridIO.cs" Line="34" Column="91" />
       <File FileName="Assets/Scripts/Species/Representation/BehaviorPatternUpdater.cs" />
       <File FileName="Assets/Scripts/Utils/Managers/DialogueManager.cs" />
       <File FileName="Assets/DialogueEditor/Assets/Scripts/NPCConversation.cs" />
       <File FileName="Assets/DialogueEditor/Assets/Scripts/Editor/DialogueEditorWindow.cs" />
       <File FileName="Assets/DialogueEditor/Assets/Scripts/Editor/NPCConversationEditor.cs" />
-      <File FileName="Assets/Scripts/UI/Store/TileStoreSection.cs" Line="22" Column="20" />
-      <File FileName="Assets/Scripts/UI/Store/StoreSection.cs" Line="56" Column="72" />
-      <File FileName="Assets/Scripts/UI/MenuManager.cs" Line="49" Column="39" />
-      <File FileName="Assets/Scripts/UI/TopHUD.cs" Line="36" Column="9" />
-      <File FileName="Assets/Scripts/UI/Store/PlayerBalance.cs" Line="5" Column="14" />
-      <File FileName="Assets/Scripts/Utils/Managers/PauseManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Utils/PlayerController.cs" Line="91" Column="62" />
+      <File FileName="Assets/Scripts/UI/Store/TileStoreSection.cs" />
+      <File FileName="Assets/Scripts/UI/Store/StoreSection.cs" />
+      <File FileName="Assets/Scripts/UI/MenuManager.cs" />
+      <File FileName="Assets/Scripts/UI/TopHUD.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/UI/Store/PlayerBalance.cs" />
+      <File FileName="Assets/Scripts/Utils/Managers/PauseManager.cs" />
+      <File FileName="Assets/Scripts/Utils/PlayerController.cs" />
       <File FileName="Assets/Scripts/Grid/Tiles/GrassColoringMethod.cs" Line="21" Column="30" />
-      <File FileName="Assets/Scripts/Grid/TileSystem.cs" Line="139" Column="31" />
-      <File FileName="Assets/Scripts/Grid/Tiles/TileColorManager.cs" Line="6" Column="30" />
+      <File FileName="Assets/Scripts/Grid/TileSystem.cs" />
+      <File FileName="Assets/Scripts/Grid/Tiles/TileColorManager.cs" />
+      <File FileName="Assets/Scripts/Grid/ReserveDraft.cs" Line="95" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,9 +41,8 @@
                 </Node>
                 <Node name="Grid" expanded="True">
                   <Node name="Testers" expanded="True" />
-                  <Node name="Tiles" expanded="True">
-                    <Node name="TileColorManager.cs" selected="True" />
-                  </Node>
+                  <Node name="Tiles" expanded="True" />
+                  <Node name="ReserveDraft.cs" selected="True" />
                 </Node>
                 <Node name="Species" expanded="True">
                   <Node name="Population" expanded="True" />
@@ -65,7 +65,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="20d262bc-0543-47e1-a7e2-23c19c12c257" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c4056a2-2b08-45b6-8f42-be5be7b2e5a2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
