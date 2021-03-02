@@ -856,8 +856,8 @@ MonoBehaviour:
   OptionsButton: {fileID: 0}
   RestartButton: {fileID: 847325953540973229}
   NextLevelButton: {fileID: 0}
-  title: {fileID: 0}
-  text: {fileID: 0}
+  title: {fileID: 7925528510455854804}
+  text: {fileID: 5832809130060376378}
   PauseManager: {fileID: 0}
   SceneNavigator: {fileID: 11400000, guid: 2f3174284efd34e32ad8eb0f5d93d9d0, type: 2}
   objectiveManager: {fileID: 0}
@@ -2703,11 +2703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4901738870636729095}
+      objectReference: {fileID: 0}
     - target: {fileID: 4938920642109017287, guid: a0249a7188836438ea7b3d23976591ac,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartConversation
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4938920642109017287, guid: a0249a7188836438ea7b3d23976591ac,
         type: 3}
