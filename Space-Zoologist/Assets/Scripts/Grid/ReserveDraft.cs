@@ -48,6 +48,7 @@ public class ReserveDraft : MonoBehaviour
     public void cancelDrafting()
     {
         GridIO.LoadGrid(currentLevel);
+        GridIO.SaveGrid(currentLevel + "Draft");
 
         closeStoreStuff();
         setAnimalsVisible(true);
