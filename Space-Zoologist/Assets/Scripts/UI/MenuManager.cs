@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 // TODO refactor PodMenu to inherit same as other store menus
 public class MenuManager : MonoBehaviour
@@ -19,6 +21,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] CursorItem CursorItem = default;
     [SerializeField] GridSystem GridSystem = default;
     [SerializeField] List<RectTransform> UIElements = default;
+    [SerializeField] RectTransform StoreCanvas = default;
     public bool IsInStore { get; private set; }
 
     public void Start()
@@ -50,10 +53,32 @@ public class MenuManager : MonoBehaviour
             this.StoreToggledOff(menu);
         }
     }
+    public void ToggleStore()
+    {
+        if (!this.IsInStore)
+        {
+            OpenStore();
+        }
+        else {
+            CloseStore();
+        }
+    }
+    public void OpenStore()
+    {
+        if (!this.IsInStore)
+        {
+            this.PauseManager.TryToPause();
+            EventManager.Instance.InvokeEvent(EventType.StoreOpened, null);
+        }
+        StoreCanvas.DOAnchorPosX(StoreCanvas.anchoredPosition.x + StoreCanvas.rect.width / 2.5f, 0.5f);
+        this.IsInStore = true;
+    }
 
     public void CloseStore()
     {
-        this.StoreToggledOff(this.currentMenu);
+        StoreCanvas.DOAnchorPosX(StoreCanvas.anchoredPosition.x - StoreCanvas.rect.width / 2.5f, 0.5f);
+        this.IsInStore = false;
+        EventManager.Instance.InvokeEvent(EventType.StoreClosed, null);
     }
 
     private void StoreToggledOn(GameObject menu)

@@ -1198,6 +1198,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 3289451812338838481, guid: ecc09c05e70234204aff26167c91bc40,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f5107ec24f114f5aa9c2ceabd6afe4b,
+        type: 3}
     - target: {fileID: 3307307828332450101, guid: ecc09c05e70234204aff26167c91bc40,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1212,6 +1218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981196930886823818, guid: ecc09c05e70234204aff26167c91bc40,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4150530802491599301, guid: ecc09c05e70234204aff26167c91bc40,
         type: 3}
