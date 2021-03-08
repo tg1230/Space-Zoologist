@@ -24,6 +24,7 @@ public class ReserveDraft : MonoBehaviour
         GridIO.SaveGrid(currentLevel + "Draft");
     }
 
+    // Start drafting, TODO save state of resources before draft
     public void startDrafting()
     {
         GridIO.LoadGrid(currentLevel + "Draft");
@@ -34,6 +35,7 @@ public class ReserveDraft : MonoBehaviour
         UpdateUI(false);
     }
 
+    // Save the draft and go back to game
     public void finishDrafting()
     {
         GridIO.SaveGrid(currentLevel + "Draft");
@@ -45,6 +47,7 @@ public class ReserveDraft : MonoBehaviour
         UpdateUI(true);
     }
 
+    // Cancel and delete the draft, TODO load state of resources before draft
     public void cancelDrafting()
     {
         GridIO.LoadGrid(currentLevel);
@@ -56,6 +59,7 @@ public class ReserveDraft : MonoBehaviour
         UpdateUI(true);
     }
 
+    // Confirm and apply draft
     public void applyDraft()
     {
         GridIO.SaveGrid(currentLevel);
